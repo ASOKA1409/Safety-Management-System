@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safety Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-icon">🦺</span><div><b>SAFETY</b><small>MANAGEMENT SYSTEM</small></div></div>
+    <nav>
+      <a class="active">▦ <span>Dashboard</span></a>
+      <a>👥 <span>Manpower</span></a>
+      <a>🎓 <span>Training</span></a>
+      <a>📜 <span>Certificate</span></a>
+      <a>⚠️ <span>Hazard Report</span></a>
+      <a>🚨 <span>Incident & Near Miss</span></a>
+      <a>🔍 <span>Inspection</span></a>
+      <a>📋 <span>Action Tracking</span></a>
+      <a>🪪 <span>Permit</span></a>
+      <a>🦺 <span>PPE</span></a>
+      <a>📈 <span>Safety KPI</span></a>
+      <a>📊 <span>Report</span></a>
+      <a>⚙️ <span>Master Data</span></a>
+      <a>👤 <span>User Management</span></a>
+    </nav>
+    <div class="sidebar-foot">Prototype v1.0</div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="search">⌕ <input placeholder="Search here..."></div>
+      <div class="top-actions"><span>🔔 <sup>5</sup></span><div class="profile"><span class="avatar">SA</span><div><b>SHE Analyst</b><small>Angsana Site</small></div>⌄</div></div>
+    </header>
+
+    <section class="content">
+      <div class="title-row">
+        <div><h1>Dashboard</h1><p>Safety Performance Overview</p></div>
+        <div class="filters"><select><option>Angsana Site</option><option>All Sites</option></select><select><option>September 2026</option><option>August 2026</option></select><button>⬇ Export Report</button></div>
+      </div>
+
+      <div class="cards">
+        <div class="card"><span class="icon blue">👥</span><div><small>Total Manpower</small><strong>500</strong><em>▲ +7 this month</em></div></div>
+        <div class="card"><span class="icon green">🎓</span><div><small>Training Compliance</small><strong>87%</strong><div class="progress"><i style="width:87%"></i></div></div></div>
+        <div class="card"><span class="icon red">⚠</span><div><small>Total Incident</small><strong>12</strong><em class="bad">▲ +2 this month</em></div></div>
+        <div class="card"><span class="icon yellow">🚧</span><div><small>Near Miss</small><strong>34</strong><em>▼ -6 this month</em></div></div>
+        <div class="card"><span class="icon purple">▤</span><div><small>Open Finding</small><strong>24</strong><em class="warn">12 Overdue</em></div></div>
+        <div class="card"><span class="icon red">📜</span><div><small>Expired Certificate</small><strong>5</strong><em class="bad">Needs Renewal</em></div></div>
+        <div class="card"><span class="icon purple">🪪</span><div><small>Expired Permit</small><strong>2</strong><em class="bad">Needs Renewal</em></div></div>
+      </div>
+
+      <div class="grid">
+        <section class="panel chart-panel"><h3>Incident & Near Miss Trend</h3><div class="chart"><svg viewBox="0 0 700 230" preserveAspectRatio="none"><g class="gridline"><line x1="45" y1="30" x2="680" y2="30"/><line x1="45" y1="80" x2="680" y2="80"/><line x1="45" y1="130" x2="680" y2="130"/><line x1="45" y1="180" x2="680" y2="180"/></g><polyline class="line blue-line" points="50,165 125,130 200,128 275,95 350,125 425,90 500,70 575,60 650,72"/><polyline class="line red-line" points="50,190 125,160 200,160 275,172 350,145 425,130 500,145 575,125 650,145"/></svg><div class="legend"><span><i class="dot blue-dot"></i>Near Miss</span><span><i class="dot red-dot"></i>Incident</span></div></div></section>
+
+        <section class="panel"><h3>Hazard Report by Category</h3><div class="donut"><div><b>128</b><small>Total</small></div></div><div class="legend-list"><span><i class="dot d1"></i>Unsafe Condition <b>35%</b></span><span><i class="dot d2"></i>Unsafe Act <b>25%</b></span><span><i class="dot d3"></i>Equipment <b>18%</b></span><span><i class="dot d4"></i>Environment <b>12%</b></span></div></section>
+
+        <section class="panel"><h3>Training Status</h3><div class="donut green-donut"><div><b>500</b><small>Manpower</small></div></div><div class="legend-list"><span><i class="dot green-dot"></i>Valid <b>435 (87%)</b></span><span><i class="dot yellow-dot"></i>Expiring Soon <b>40 (8%)</b></span><span><i class="dot red-dot"></i>Expired <b>25 (5%)</b></span></div></section>
+
+        <section class="panel"><h3>Action Closure</h3><div class="donut action-donut"><div><b>48</b><small>Total</small></div></div><div class="legend-list"><span><i class="dot green-dot"></i>Closed <b>28 (58%)</b></span><span><i class="dot yellow-dot"></i>Open <b>14 (29%)</b></span><span><i class="dot red-dot"></i>Overdue <b>6 (13%)</b></span></div></section>
+      </div>
+
+      <div class="section-grid">
+        <section class="table-panel"><div class="panel-head"><div><h2>Manpower Database</h2><p>Manage employee and contractor data</p></div><button>+ Add Manpower</button></div><table><thead><tr><th>Name</th><th>NIK</th><th>Position</th><th>Department</th><th>Company</th><th>Status</th></tr></thead><tbody><tr><td>Ahmad Rusdi</td><td>TK0001</td><td>Technician</td><td>Service</td><td>Trakindo</td><td><span class="status ok">Active</span></td></tr><tr><td>Budi Santoso</td><td>TK0002</td><td>Supervisor</td><td>Workshop</td><td>Trakindo</td><td><span class="status ok">Active</span></td></tr><tr><td>Andi Permana</td><td>TK0003</td><td>Operator</td><td>POD</td><td>Vendor A</td><td><span class="status ok">Active</span></td></tr></tbody></table></section>
+
+        <section class="table-panel"><div class="panel-head"><div><h2>Training Database</h2><p>Monitor training record & validity</p></div><button>+ Add Training</button></div><table><thead><tr><th>Name</th><th>Training</th><th>Expiry</th><th>Status</th></tr></thead><tbody><tr><td>Ahmad Rusdi</td><td>SIMPER A2B</td><td>10 Jan 2027</td><td><span class="status ok">Valid</span></td></tr><tr><td>Budi Santoso</td><td>Working at Height</td><td>12 Mar 2027</td><td><span class="status ok">Valid</span></td></tr><tr><td>Andi Permana</td><td>LOTOTO</td><td>05 Feb 2026</td><td><span class="status bad">Expired</span></td></tr></tbody></table></section>
+      </div>
+
+      <div class="quick">
+        <button>⚠️ + Report Hazard</button><button>🚨 + Report Near Miss</button><button>🔍 + New Inspection</button><button>📋 + New Action</button>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
